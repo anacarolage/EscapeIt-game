@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PublishReadyToRun>false</PublishReadyToRun>
+    <TieredCompilation>false</TieredCompilation>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>escapeIt_door.ico</ApplicationIcon>
+    <Win32Resource />
+    <Authors>Paula Matsuo and Ana Carolina Campos</Authors>
+    <PackageId>EscapeIt</PackageId>
+    <Product>EscapeIt</Product>
+    <PackageIcon>escapeIt_door.ico</PackageIcon>
+    <PackageIconUrl />
+    <AssemblyName>EscapeIt</AssemblyName>
+    <RootNamespace>EscapeIt</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+    <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Memory\" />
+    <Folder Include="Puzzle\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="escapeIt_door.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
