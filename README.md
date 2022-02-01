@@ -20,6 +20,6 @@ You can [watch our video](https://youtu.be/S8mSTwdk0I8) for a full demo of the g
 ---
 **License**
 
-This project uses the MIT License available in the license document.
+This project uses the MIT License available in the license document, because this it is a commum and simple permissive license.
 
 ---
